@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deshayes - Menut Erwann - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+    </nav>
+
+    <nav class="side-nav">
+        <a href="#" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#about" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Profile</span>
+        </a>
+        <a href="#projects" class="nav-item">
+            <i class="fas fa-book"></i>
+            <span>Projects</span>
+        </a>
+        <a href="#work" class="nav-item">
+            <i class="fas fa-briefcase"></i>
+            <span>Work</span>
+        </a>
+        <a href="#contact" class="nav-item">
+            <i class="fas fa-comment"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content fade-in">
+                <h1>Erwann<br>Deshayes-Menut</h1>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="fade-in">A propos de moi</h2>
+            <div class="about-content">
+                <div class="profile-image fade-in">
+                    <div class="image-placeholder">(image de moi)</div>
+                </div>
+                <div class="about-info">
+                    <div class="qualities">
+                        <div class="quality fade-in">qualités</div>
+                        <div class="quality-box fade-in"></div>
+                        <div class="quality-box fade-in"></div>
+                    </div>
+                    <div class="about-text fade-in">
+                        <p>texte parlant de moi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="fade-in">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <div class="image-placeholder">Projet 1</div>
+                    </div>
+                    <h3>Nom du projet</h3>
+                    <p>Description du projet</p>
+                </div>
+                <!-- Ajoutez plus de project-card selon vos besoins -->
+            </div>
+        </section>
+
+        <section class="work" id="work">
+            <h2 class="fade-in">Mon Expérience</h2>
+            <div class="work-timeline">
+                <div class="work-item fade-in">
+                    <div class="work-date">2023 - Présent</div>
+                    <div class="work-content">
+                        <h3>Poste occupé</h3>
+                        <p>Description de l'expérience</p>
+                    </div>
+                </div>
+                <!-- Ajoutez plus de work-item selon vos besoins -->
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="fade-in">Contact</h2>
+            <div class="contact-content">
+                <form class="contact-form fade-in">
+                    <input type="text" placeholder="Nom" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+33 6 XX XX XX XX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
