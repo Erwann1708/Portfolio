@@ -6,6 +6,7 @@
     <title>Deshayes - Menut Erwann - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <nav class="top-nav">
@@ -44,19 +45,111 @@
         </section>
 
         <section class="about" id="about">
-            <h2 class="fade-in">A propos de moi</h2>
+            <h2 class="fade-in">À propos de moi</h2>
             <div class="about-content">
-                <div class="profile-image fade-in">
-                    <div class="image-placeholder">(image de moi)</div>
+                <div class="about-text fade-in">
+                    <p>Je m'appelle Erwann, j'ai 19 ans et je suis actuellement en première année de BUT Informatique à l'IUT 2 de Grenoble.</p>
+                    <p>Passionné par la programmation, j'ai déjà acquis une solide expérience grâce à la piscine 42, où j'ai appris à coder de manière intensive et autonome. J'ai pu mettre en pratique mes compétences en HTML, CSS et JavaScript dans la création de ce portfolio.</p>
+                    <p>Dans le cadre de mes études, je m'initie à la gestion de bases de données et au développement avec Java, que j'utilise actuellement pour créer une application de gestion d'événements. Je découvre également Figma pour créer des wireframes et prototypes, ce qui me permet de mieux comprendre les besoins utilisateurs et d'optimiser l'expérience utilisateur.</p>
+                    <p>En dehors des études, je pratique régulièrement le sport et je suis un grand amoureux de la montagne. Ces activités me permettent de rester concentré et persévérant, des qualités essentielles pour réussir dans le développement web.</p>
+                    <p>Je suis à la recherche de stages qui me permettront de mettre en pratique mes connaissances dans des situations réelles. Je suis particulièrement intéressé par les projets innovants qui allient technologie et créativité, et je suis prêt à m'investir pleinement pour contribuer à leur succès.</p>
                 </div>
-                <div class="about-info">
-                    <div class="qualities">
-                        <div class="quality fade-in">qualités</div>
-                        <div class="quality-box fade-in"></div>
-                        <div class="quality-box fade-in"></div>
+                <div class="qualities fade-in">
+                    <div class="quality-box">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Autonome</h3>
+                        <p>Capacité à travailler de manière indépendante</p>
                     </div>
-                    <div class="about-text fade-in">
-                        <p>texte parlant de moi</p>
+                    <div class="quality-box">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Persévérant</h3>
+                        <p>Détermination et persévérance</p>
+                    </div>
+                    <div class="quality-box">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Curieux</h3>
+                        <p>Intérêt constant pour l'apprentissage</p>
+                    </div>
+                </div>
+                <a href="#contact" class="contact-btn fade-in">Contactez-moi</a>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="fade-in">Mes compétences</h2>
+            <div class="skills-content fade-in">
+                <div class="skills-category">
+                    <h3>Développement</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span class="skill-level">intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>CSS / HTML</span>
+                                <span class="skill-level">intermédiaire</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span class="skill-level">les bases</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span class="skill-level">les bases</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Web Design</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span class="skill-level">les bases</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-diagram-project"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>Draw.io</span>
+                                <span class="skill-level">les bases</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span>Whimsical</span>
+                                <span class="skill-level">les bases</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,29 +157,151 @@
 
         <section class="projects" id="projects">
             <h2 class="fade-in">Mes Projets</h2>
-            <div class="projects-grid">
-                <div class="project-card fade-in">
-                    <div class="project-image">
-                        <div class="image-placeholder">Projet 1</div>
+            <div class="swiper projects-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide project-card fade-in">
+                        <div class="project-image">
+                            <div class="image-placeholder">Application Mobile</div>
+                        </div>
+                        <h3>Application Mobile</h3>
+                        <p>Développement d'une application mobile multiplateforme avec React Native</p>
                     </div>
-                    <h3>Nom du projet</h3>
-                    <p>Description du projet</p>
+                    <div class="swiper-slide project-card fade-in">
+                        <div class="project-image">
+                            <div class="image-placeholder">Site E-commerce</div>
+                        </div>
+                        <h3>Site E-commerce</h3>
+                        <p>Création d'une boutique en ligne avec WooCommerce et WordPress</p>
+                    </div>
+                    <div class="swiper-slide project-card fade-in">
+                        <div class="project-image">
+                            <div class="image-placeholder">Dashboard Analytique</div>
+                        </div>
+                        <h3>Dashboard Analytique</h3>
+                        <p>Interface de visualisation de données avec React et Chart.js</p>
+                    </div>
+                    <div class="swiper-slide project-card fade-in">
+                        <div class="project-image">
+                            <div class="image-placeholder">API REST</div>
+                        </div>
+                        <h3>API REST</h3>
+                        <p>Développement d'une API sécurisée avec Node.js et Express</p>
+                    </div>
+                    <div class="swiper-slide project-card fade-in">
+                        <div class="project-image">
+                            <div class="image-placeholder">Chat Bot</div>
+                        </div>
+                        <h3>Chat Bot</h3>
+                        <p>Bot d'assistance conversationnel avec Python et Dialogflow</p>
+                    </div>
+                    <div class="swiper-slide project-card fade-in">
+                        <div class="project-image">
+                            <div class="image-placeholder">Portfolio</div>
+                        </div>
+                        <h3>Portfolio</h3>
+                        <p>Site web personnel avec HTML5, CSS3 et JavaScript</p>
+                    </div>
                 </div>
-                <!-- Ajoutez plus de project-card selon vos besoins -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
-        <section class="work" id="work">
-            <h2 class="fade-in">Mon Expérience</h2>
-            <div class="work-timeline">
-                <div class="work-item fade-in">
-                    <div class="work-date">2023 - Présent</div>
-                    <div class="work-content">
-                        <h3>Poste occupé</h3>
-                        <p>Description de l'expérience</p>
+        <section class="experiences" id="timeline">
+            <h2 class="fade-in">Mes Expériences</h2>
+            <div class="experiences-container fade-in">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Baccalauréat général</h3>
+                        <span class="location">Lycée Argouges, Grenoble</span>
+                        <div class="experience-date">2023</div>
+                        <ul class="responsibilities">
+                            <li>Spécialité Mathématiques</li>
+                            <li>Spécialité Numérique et Sciences Informatiques (NSI)</li>
+                        </ul>
                     </div>
                 </div>
-                <!-- Ajoutez plus de work-item selon vos besoins -->
+
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Licence Mathématiques et Informatique</h3>
+                        <span class="location">Université Grenoble Alpes, Grenoble</span>
+                        <div class="experience-date">2023-2024</div>
+                        <ul class="responsibilities">
+                            <li>1ère année</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Piscine – École 42</h3>
+                        <span class="location">Lyon</span>
+                        <div class="experience-date">Juillet 2024 – 4 semaines</div>
+                        <ul class="responsibilities">
+                            <li>Immersion en programmation</li>
+                            <li>Apprentissage collaboratif</li>
+                            <li>Concours sélectif</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Employé mise en rayon</h3>
+                        <span class="company">Auchan (SAMSIC)</span>
+                        <div class="experience-date">Juillet 2024 – 3 semaines</div>
+                        <ul class="responsibilities">
+                            <li>Mise en rayon</li>
+                            <li>Nettoyage des gondoles</li>
+                            <li>Facing produits</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Inventoriste</h3>
+                        <span class="company">Bricorama & Castorama (SAMSIC)</span>
+                        <div class="experience-date">Décembre 2024 – 1 jour/magasin</div>
+                        <ul class="responsibilities">
+                            <li>Inventaire avec lecteur optique</li>
+                            <li>Rapidité et précision</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Manutentionnaire</h3>
+                        <span class="company">Decathlon (SAMSIC)</span>
+                        <div class="experience-date">Mars 2025 – 1 jour</div>
+                        <ul class="responsibilities">
+                            <li>Démontage de gondoles</li>
+                            <li>Port de charges</li>
+                            <li>Respect des consignes de sécurité</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -99,19 +314,84 @@
                     <textarea placeholder="Message" required></textarea>
                     <button type="submit">Envoyer</button>
                 </form>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const swiper = new Swiper('.projects-swiper', {
+                            slidesPerView: 3,
+                            spaceBetween: 30,
+                            loop: true,
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                            breakpoints: {
+                                320: {
+                                    slidesPerView: 1,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+                            }
+                        });
+                    });
+                </script>
                 <div class="contact-info fade-in">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
+                        <p>deshayesmenuterwann@gmail.com</p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <p>+33 6 XX XX XX XX</p>
+                        <p>06 23 17 28 00</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/Erwann1708" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/erwann-deshayes-9b1351288/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <p class="footer-text">© 2025 Erwann Deshayes. Tous droits réservés.</p>
+        </div>
+    </footer>
+    
+    <!-- Barre de navigation flottante -->
+    <nav class="floating-nav">
+        <a href="#about" class="nav-item" data-section="about">
+            <i class="fas fa-user"></i>
+            <span>Profil</span>
+        </a>
+        <a href="#skills" class="nav-item" data-section="skills">
+            <i class="fas fa-code"></i>
+            <span>Compétences</span>
+        </a>
+        <a href="#projects" class="nav-item" data-section="projects">
+            <i class="fas fa-briefcase"></i>
+            <span>Portfolio</span>
+        </a>
+        <a href="#timeline" class="nav-item" data-section="timeline">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Agenda</span>
+        </a>
+        <a href="#contact" class="nav-item" data-section="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

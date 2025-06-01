@@ -70,8 +70,74 @@ navItems.forEach(item => {
     });
 });
 
-// Observe all elements with fade-in class
+// Gestion de la barre de navigation flottante
+const floatingNav = document.querySelector('.floating-nav');
+const heroSection = document.querySelector('.hero');
+let lastScrollY = window.scrollY;
+
+// Fonction pour gérer l'affichage de la barre de navigation
+function handleScroll() {
+    const currentScrollY = window.scrollY;
+    const heroHeight = heroSection.offsetHeight;
+    
+    // Afficher/masquer la barre de navigation
+    if (currentScrollY > heroHeight / 2) {
+        floatingNav.classList.add('visible');
+    } else {
+        floatingNav.classList.remove('visible');
+    }
+    
+    // Mettre à jour le dernier défilement
+    lastScrollY = currentScrollY;
+}
+
+// Gestion du clic sur les liens de la barre de navigation
+document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', (e) => {
+        // Supprimer la classe active de tous les éléments
+        document.querySelectorAll('.nav-item').forEach(navItem => {
+            navItem.classList.remove('active');
+        });
+        
+        // Ajouter la classe active à l'élément cliqué
+        e.currentTarget.classList.add('active');
+    });
+});
+
+// Observer les sections pour mettre en surbrillance l'élément actif
+const sections = document.querySelectorAll('section[id]');
+
+function highlightNavItem() {
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        
+        if (window.scrollY >= sectionTop - 200) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('data-section') === current) {
+            item.classList.add('active');
+        }
+    });
+}
+
+// Écouteurs d'événements
+window.addEventListener('scroll', () => {
+    handleScroll();
+    highlightNavItem();
+});
+
+// Observer tous les éléments avec la classe fade-in
 document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(element => observer.observe(element));
+    
+    // Initialiser la barre de navigation
+    handleScroll();
 });
