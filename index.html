@@ -159,44 +159,44 @@
             <h2 class="fade-in">Mes Projets</h2>
             <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide project-card fade-in">
+                    <div class="swiper-slide project-card fade-in" data-project="capgemini">
                         <div class="project-image">
-                            <div class="image-placeholder">Application Mobile</div>
+                            <img src="assets/images/capgemini-project.jpg" alt="Site Capgemini" onerror="this.src='https://www.capgemini.com/wp-content/uploads/2021/09/Capgemini-engineering.jpg'">
                         </div>
-                        <h3>Application Mobile</h3>
-                        <p>Développement d'une application mobile multiplateforme avec React Native</p>
+                        <h3>Site Capgemini</h3>
+                        <p>Site web pour les stages de 3ème chez Capgemini</p>
                     </div>
                     <div class="swiper-slide project-card fade-in">
                         <div class="project-image">
                             <div class="image-placeholder">Site E-commerce</div>
                         </div>
-                        <h3>Site E-commerce</h3>
+                        <h3>Site E-commerce (fictif)</h3>
                         <p>Création d'une boutique en ligne avec WooCommerce et WordPress</p>
                     </div>
                     <div class="swiper-slide project-card fade-in">
                         <div class="project-image">
                             <div class="image-placeholder">Dashboard Analytique</div>
                         </div>
-                        <h3>Dashboard Analytique</h3>
+                        <h3>Dashboard Analytique (fictif)</h3>
                         <p>Interface de visualisation de données avec React et Chart.js</p>
                     </div>
                     <div class="swiper-slide project-card fade-in">
                         <div class="project-image">
                             <div class="image-placeholder">API REST</div>
                         </div>
-                        <h3>API REST</h3>
+                        <h3>API REST (fictif)</h3>
                         <p>Développement d'une API sécurisée avec Node.js et Express</p>
                     </div>
                     <div class="swiper-slide project-card fade-in">
                         <div class="project-image">
                             <div class="image-placeholder">Chat Bot</div>
                         </div>
-                        <h3>Chat Bot</h3>
+                        <h3>Chat Bot (fictif)</h3>
                         <p>Bot d'assistance conversationnel avec Python et Dialogflow</p>
                     </div>
-                    <div class="swiper-slide project-card fade-in">
+                    <div class="swiper-slide project-card fade-in" data-project="portfolio">
                         <div class="project-image">
-                            <div class="image-placeholder">Portfolio</div>
+                            <img src="assets/images/portfolio-project.jpg" alt="Portfolio" onerror="this.src='https://via.placeholder.com/400x300/1a1a2e/ffffff?text=Portfolio'">
                         </div>
                         <h3>Portfolio</h3>
                         <p>Site web personnel avec HTML5, CSS3 et JavaScript</p>
@@ -360,12 +360,20 @@
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/erwann-deshayes-9b1351288/" target="_blank" rel="noopener noreferrer" class="social-link">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
-            <p class="footer-text">© 2025 Erwann Deshayes. Tous droits réservés.</p>
+            <p>&copy; 2024 Erwann Deshaye. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Modal pour les projets -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
     
     <!-- Barre de navigation flottante -->
     <nav class="floating-nav">
