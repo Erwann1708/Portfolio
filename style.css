@@ -77,9 +77,33 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
 }
 
 /* Animations */
@@ -115,6 +139,20 @@ body {
     display: flex;
     justify-content: space-between;
     z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .top-nav {
+        padding: 1rem;
+    }
+    
+    .top-nav a {
+        font-size: 1rem;
+    }
+    
+    .top-nav .contact-btn {
+        padding: 0.4rem 1rem;
+    }
 }
 
 .top-nav a {
@@ -163,6 +201,14 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 768px) {
+    .side-nav {
+        bottom: 10px;
+        padding: 8px 15px;
+        gap: 15px;
+    }
 }
 
 .side-nav.visible {
@@ -278,6 +324,17 @@ body {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    .about-content {
+        padding: 0 15px;
+    }
+    
+    .about-text p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+}
+
 .about h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -299,7 +356,7 @@ body {
 .skills {
     background: linear-gradient(to bottom, #1a1a2e, #16213e);
     color: white;
-    padding: 80px 0 40px;
+    padding: 80px 0;
 }
 
 .skills h2 {
@@ -398,6 +455,19 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     padding-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .experiences-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .experiences-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .experience-card {
@@ -840,6 +910,29 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 20px 0;
 }
 
+@media (max-width: 768px) {
+    .experience-timeline {
+        padding: 10px;
+    }
+    
+    .experience-timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        padding-left: 50px;
+    }
+    
+    .timeline-item::before {
+        left: 26px;
+    }
+    
+    .timeline-content {
+        width: 100%;
+    }
+}
+
 .experience-timeline::before {
     content: '';
     position: absolute;
@@ -983,6 +1076,20 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .skill-item {
@@ -1043,6 +1150,20 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     gap: 30px;
     width: 100%;
     max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .qualities {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .qualities {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 .quality-box {
@@ -1117,6 +1238,7 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         font-size: 1.3rem;
     }
 }
+
 .qualities .fade-in:nth-child(1) { transition-delay: 0s; }
 .qualities .fade-in:nth-child(2) { transition-delay: 0.2s; }
 .qualities .fade-in:nth-child(3) { transition-delay: 0.4s; }
@@ -1244,7 +1366,17 @@ a:hover, button:hover {
 
 .swiper {
     width: 100%;
-    height: 100%;
+    padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+    .swiper {
+        padding: 30px 0;
+    }
+    
+    .swiper-slide {
+        width: 300px;
+    }
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -1310,8 +1442,6 @@ a:hover, button:hover {
     height: 24px;
     border-radius: 50%;
 }
-
-
 
 .swiper-wrapper {
     height: 100%;
