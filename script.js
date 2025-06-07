@@ -165,8 +165,7 @@ const projectsData = {
         ],
         techniquesSavoirFaire: [
             'Maîtrise des standards HTML5/CSS3',
-            'Utilisation de Git pour la collaboration',
-            'Tests cross-navigateurs'
+            'Utilisation de Git pour la collaboration'
         ],
         technologies: ['HTML', 'CSS'],
         githubLink: 'https://github.com/Erwann1708/SAE-Capgemini'
@@ -193,6 +192,41 @@ const projectsData = {
         ],
         technologies: ['HTML5', 'CSS3', 'JavaScript', 'Swiper.js'],
         githubLink: 'https://github.com/Erwann1708/Portfolio'
+    },
+    superball: {
+        title: 'Base de données SuperBall',
+        description: 'Projet de création d\'une base de données pour un club de bowling, avec gestion des réservations de pistes et de chaussures.',
+        competences: [
+            'Modélisation de base de données',
+            'SQL (PostgreSQL)',
+            'Travail en binôme',
+            'Analyse des besoins',
+            'Création et gestion de schémas SQL',
+            'Documentation technique'
+        ],
+        objectifs: [
+            'Mettre en place une base de données fonctionnelle',
+            'Gérer les réservations de pistes et de chaussures',
+            'Faciliter la gestion des clients et des employés'
+        ],
+        travailGroupe: [
+            'Analyse des besoins avec le client',
+            'Conception du schéma de la base de données',
+            'Tests et validation des requêtes SQL'
+        ],
+        travailIndividuel: [
+            'Création des tables et des relations',
+            'Rédaction des requêtes SQL complexes',
+            'Documentation des schémas de base de données'
+        ],
+        techniquesSavoirFaire: [
+            'Modélisation conceptuelle (MCD)',
+            'Création et gestion de bases de données relationnelles',
+            'Optimisation des requêtes PostgreSQL',
+            'Documentation complète des schémas SQL'
+        ],
+        technologies: ['PostgreSQL', 'SQL', 'pgAdmin', 'Diagrammes de schémas'],
+        githubLink: '#'
     }
 };
 

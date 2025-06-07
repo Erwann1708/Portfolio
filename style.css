@@ -118,6 +118,24 @@
 }
 
 /* Contact styles */
+.contact-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    color: #a0a0c0;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .contact-intro {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+}
+
+/* Contact items */
 .contact-item {
     display: flex;
     align-items: center;
@@ -1423,27 +1441,31 @@ a:hover, button:hover {
     width: 100%;
     height: 200px;
     margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #1a1f33;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
-.project-image {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #1a1f33;
+.project-icon {
+    font-size: 4rem;
+    color: #333;
+    opacity: 0.7;
 }
 
 .image-placeholder {
